@@ -1,1 +1,1 @@
-# 3ColumnPreviewCArdComponent
+# 3ColumnPreviewCardComponent
