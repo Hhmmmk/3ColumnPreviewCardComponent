@@ -93,10 +93,10 @@ body {
   color: var(--clr-vdarkCyan);
 }
 
-@media (min-width: 720px) {
+@media (min-width: 800px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
-    margin: 10% 30%;
+    margin: 10% 15%;
   }
   .button {
     border-radius: 1.675rem;
