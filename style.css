@@ -1,0 +1,35 @@
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-brightOrange: hsl(32, 77%, 52%);
+  --clr-darkCyan: hsl(184, 100%, 22%);
+  --clr-vdarkCyan: hsl(179, 100%, 13%);
+  --clr-transWhite-p: hsla(0, 0%, 100%, 0.75);
+  --clr-vlightGray-bg-h-btn: hsl(0, 0%, 95%);
+}
+
+.card__title {
+  font-family: 'Big Shoulders Display', cursive;
+  color: var(--clr-vlightGray-bg-h-btn);
+}
+
+.card__description {
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--clr-transWhite-p);
+}
+
+.button {
+  all: unset;
+  background: var(--clr-vlightGray-bg-h-btn);
+}
+
+body {
+  font-size: 15px;
+  background: var(--clr-vlightGray-bg-h-btn);
+}
