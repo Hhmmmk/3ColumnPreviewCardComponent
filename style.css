@@ -15,9 +15,12 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   font-size: 15px;
   font-weight: 400;
   background: var(--clr-vlightGray-bg-h-btn);
+  align-items: center;
 }
 
 .card__title {
@@ -35,7 +38,8 @@ body {
 
 .container {
   display: grid;  
-  margin: 10%;
+  max-width: 800px;
+  margin: 32px;
 }
 
 .card {
@@ -46,6 +50,7 @@ body {
 }
 
 .container .button {
+  box-sizing: border-box;
   all: unset;
   background: var(--clr-vlightGray-bg-h-btn);
   padding: 1rem 2rem;
@@ -57,15 +62,19 @@ body {
   text-align: center;
   justify-self: flex-end;
   margin-top: auto;
+  cursor: pointer;
+  border: solid 4px var(--clr-vlightGray-bg-h-btn);
+}
+
+.container .button:active {
+  color: var(--clr-transWhite-p);
+  background: none;
 }
 
 .sedans {
   background: var(--clr-brightOrange);
   border-radius: 0.5rem 0.5rem 0 0;
   -webkit-border-radius: 0.5rem 0.5rem 0 0;
-  -moz-border-radius: 0.5rem 0.5rem 0 0;
-  -ms-border-radius: 0.5rem 0.5rem 0 0;
-  -o-border-radius: 0.5rem 0.5rem 0 0;
 }
 
 .sedans .button {
@@ -98,9 +107,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     margin: 10% 15%;
   }
-  .button {
-    border-radius: 1.675rem;
-  }
+
   .sedans {
     border-radius: 0.5rem 0 0 0.5rem;
     -webkit-border-radius: 0.5rem 0 0 0.5rem;
