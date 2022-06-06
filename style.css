@@ -14,9 +14,17 @@
   --clr-vlightGray-bg-h-btn: hsl(0, 0%, 95%);
 }
 
+body {
+  font-size: 15px;
+  font-weight: 400;
+  background: var(--clr-vlightGray-bg-h-btn);
+}
+
 .card__title {
   font-family: 'Big Shoulders Display', cursive;
+  font-size: 2rem;
   color: var(--clr-vlightGray-bg-h-btn);
+  font-weight: 700;
 }
 
 .card__description {
@@ -24,12 +32,86 @@
   color: var(--clr-transWhite-p);
 }
 
-.button {
-  all: unset;
-  background: var(--clr-vlightGray-bg-h-btn);
+.container {
+  display: grid;  
+  margin: 10% 15%;
 }
 
-body {
-  font-size: 15px;
-  background: var(--clr-vlightGray-bg-h-btn);
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 2rem;
 }
+
+.container .button {
+  all: unset;
+  background: var(--clr-vlightGray-bg-h-btn);
+  padding: 1rem 2rem;
+  max-width: fit-content;
+  border-radius: 2.25rem;
+  -webkit-border-radius: 2.25rem;
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  justify-self: flex-end;
+  margin-top: auto;
+}
+
+.sedans {
+  background: var(--clr-brightOrange);
+  border-radius: 0.5rem 0.5rem 0 0;
+  -webkit-border-radius: 0.5rem 0.5rem 0 0;
+  -moz-border-radius: 0.5rem 0.5rem 0 0;
+  -ms-border-radius: 0.5rem 0.5rem 0 0;
+  -o-border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.sedans .button {
+  color: var(--clr-brightOrange);
+}
+
+.suvs {
+  background: var(--clr-darkCyan);
+}
+
+.suvs .button {
+  color: var(--clr-darkCyan);
+}
+
+.luxury {
+  background: var(--clr-vdarkCyan);
+  border-radius: 0 0 0.5rem 0.5rem;
+  -webkit-border-radius: 0 0 0.5rem 0.5rem;
+  -moz-border-radius: 0 0 0.5rem 0.5rem;
+  -ms-border-radius: 0 0 0.5rem 0.5rem;
+  -o-border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.luxury .button {
+  color: var(--clr-vdarkCyan);
+}
+
+@media (min-width: 720px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .button {
+    border-radius: 1.675rem;
+  }
+  .sedans {
+    border-radius: 0.5rem 0 0 0.5rem;
+    -webkit-border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .luxury {
+    border-radius: 0 0.5rem 0.5rem 0;
+    -webkit-border-radius: 0 0.5rem 0.5rem 0;
+  }
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
